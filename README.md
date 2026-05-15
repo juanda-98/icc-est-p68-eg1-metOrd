@@ -22,7 +22,7 @@ Implementar `sortByTitle(Movie[] movies)` en `MovieController` para ordenar pel√
 
 ## Ejemplo de salida esperada (5 pel√≠culas)
 
-Entrada de ejemplo:
+Entrada de ejemplos:
 ```text
 1. Inception (2010)
 2. avatar (2009)

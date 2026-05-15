@@ -11,7 +11,18 @@ public class MovieController {
      * @param movies Arreglo de películas a ordenar
      */
     public void sortByTitle(Movie[] movies) {
-
+        int n = movies.length;
+        for (int i = 0; i < n; i++) {
+            int minIndex = i;
+            for(int j = i + 1; j < n; j++) {
+                if ((movies[j].getNombre().compareTo(movies[minIndex].getNombre()) < 0)) {
+                    minIndex = j;
+                }
+            }
+            Movie temp = movies[minIndex];
+            movies[minIndex] = movies[i];
+            movies[i] = temp;
+        }
     }
 
 }
