@@ -9,7 +9,7 @@ public class App {
         // Imprimir lista sin ordenar
         System.out.println("=== Movies Original ===");
         for (int i = 0; i < movies.length; i++) {
-            System.out.println(movies[i].getTitle() + " (" + movies[i].getAnio() + ")");
+            System.out.println(movies[i].getTitle() + " (" + movies[i].getYear() + ")");
         }
 
         // Ordenar
@@ -18,7 +18,7 @@ public class App {
         // Imprimir lista ordenada
         System.out.println("\n=== Movies Ordenadas ===");
         for (int i = 0; i < movies.length; i++) {
-            System.out.println(movies[i].getTitle() + " (" + movies[i].getAnio() + ")");
+            System.out.println(movies[i].getTitle() + " (" + movies[i].getYear() + ")");
         }
     }
 

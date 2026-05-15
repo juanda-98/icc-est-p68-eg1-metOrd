@@ -2,14 +2,12 @@ package models;
 
 public class Movie {
   private String title;
-  private int anio;
-  
-
-  public Movie(String title, int anio) {
-    this.title = title;
-    this.anio = anio;
-  }
+  private int year;
   public Movie() {
+  }
+  public Movie(String title, int year) {
+    this.title = title;
+    this.year = year;
   }
   public String getTitle() {
     return title;
@@ -17,16 +15,15 @@ public class Movie {
   public void setTitle(String title) {
     this.title = title;
   }
-  public int getAnio() {
-    return anio;
+  public int getYear() {
+    return year;
   }
-  public void setAnio(int anio) {
-    this.anio = anio;
+  public void setYear(int year) {
+    this.year = year;
   }
   @Override
   public String toString() {
-    return "Movie [title=" + title + ", anio=" + anio + "]";
+    return "Movie [title=" + title + ", year=" + year + "]";
   }
-  
   
 }
