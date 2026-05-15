@@ -3,20 +3,22 @@ import models.Movie;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("=== Evaluación: Ordenamiento de Películas por Título ===\n");
-        // imirpimir la lista de películas sin ordenar
-        // ordenar la lista de películas por título utilizando el método sortByTitle del
-        // MovieController
-        // imprimir la lista de películas ordenada
-        System.out.println("Movies Original")
-        int n = movies.length;
-        for (int i = 0; i < n; i++) {
-        System.out.println(movies[i]);
+        Movie[] movies = generateMoviesList();
+        MovieController controller = new MovieController();
+
+        // Imprimir lista sin ordenar
+        System.out.println("=== Movies Original ===");
+        for (int i = 0; i < movies.length; i++) {
+            System.out.println(movies[i].getTitle() + " (" + movies[i].getAnio() + ")");
         }
-        MovieController.sortByTitle;
-        System.out.println("Movies Ordenadas");
-        for (int i = 0; i < n; i++) {
-        System.out.println(movies[i]);
+
+        // Ordenar
+        controller.sortByTitle(movies);
+
+        // Imprimir lista ordenada
+        System.out.println("\n=== Movies Ordenadas ===");
+        for (int i = 0; i < movies.length; i++) {
+            System.out.println(movies[i].getTitle() + " (" + movies[i].getAnio() + ")");
         }
     }
 

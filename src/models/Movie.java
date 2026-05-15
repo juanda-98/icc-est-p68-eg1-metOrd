@@ -1,19 +1,21 @@
 package models;
 
 public class Movie {
-  private String nombre;
+  private String title;
   private int anio;
-  public Movie() {
-  }
-  public Movie(String nombre, int anio) {
-    this.nombre = nombre;
+  
+
+  public Movie(String title, int anio) {
+    this.title = title;
     this.anio = anio;
   }
-  public String getNombre() {
-    return nombre;
+  public Movie() {
   }
-  public void setNombre(String nombre) {
-    this.nombre = nombre;
+  public String getTitle() {
+    return title;
+  }
+  public void setTitle(String title) {
+    this.title = title;
   }
   public int getAnio() {
     return anio;
@@ -23,8 +25,8 @@ public class Movie {
   }
   @Override
   public String toString() {
-    return "Movie [nombre=" + nombre + ", anio=" + anio + "]";
+    return "Movie [title=" + title + ", anio=" + anio + "]";
   }
-
+  
   
 }
